@@ -21,6 +21,13 @@ export function reducer (
       return {...state, ...weatherAdapter.addOne(payload as Forecast, state)};
     }
 
+    case weatherActions.SEARCH_FAILURE: {
+      console.log("From Reducer Action Fail", payload)
+      const data = payload;
+      return {
+          ...state, ...weatherAdapter.addOne(payload as Forecast, state)};
+  }
+
     default:
       return state;
 
