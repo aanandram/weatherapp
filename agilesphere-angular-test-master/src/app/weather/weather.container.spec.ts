@@ -24,7 +24,6 @@ describe('WeatherContainer', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WeatherContainer ],
       imports: [
         FormsModule,
         HttpClientModule,
